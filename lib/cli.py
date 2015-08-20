@@ -71,7 +71,7 @@ class MavensMateTerminalCall(threading.Thread):
         self.view           = None
         self.window         = None
         self.printer        = None
-        self.start_time      = time.time()
+        self.start_time     = kwargs.get('start_time', time.time())
         self.process_id     = time.strftime("%a, %d %b %Y %H:%M:%S", time.localtime())
         self.use_mm_panel   = kwargs.get('use_mm_panel', False)
         self.result         = None #result of operation
