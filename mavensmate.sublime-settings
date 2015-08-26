@@ -22,9 +22,10 @@ To override default MavensMate settings, modify user-specific settings (MavensMa
 	//if true, MavensMate will hook into the Sublime Text completions API to offer code assistance
 	"mm_autocomplete" : true,
 
-	//location where mm debug log should be placed (must be existing path)
+	//location where MavensMate for Sublime Text debug logs should be placed (must be existing path)
+	//log file will be named mmst.log
 	//windows users: please set like so: C:\\path\\to\\your\\logs
-	"mm_log_location" : "",
+	"mm_plugin_logs_location" : "",
 
 	//if true, mavensmate will send anonymous usage statistics (NEVER sensitive information like usernames/passwords/etc) for development, reporting, & debugging purposes (see util.py for source of the call)
 	"mm_send_usage_statistics" : true,
@@ -80,6 +81,9 @@ To override default MavensMate settings, modify user-specific settings (MavensMa
 		".js",
 		".evt"
 	],
+
+	// set to true to diff Salesforce.com server conflicts in Sublime Text
+	"mm_diff_server_conflicts" : true,
 
 	//set to false if during completions, the size of your .org_metadata file is bogging down the editor during code completion
 	"mm_use_org_metadata_for_completions" : true
